@@ -1,17 +1,50 @@
+.container {
+
+}
+
 body {
+    width: 1440px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     color: #434455;
     background-color: #FFFFFF;
 }
 
+h1, h2, h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 a {
     font-style: normal;
     text-decoration: none;
+}
+
+img {
+    display: block;
+}
+
+header .container {
+    display: flex;
+    gap: 332px;
+}
+
+.container {
+    max-width: 1128px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 156px;
+    margin-right:  156px;
+    padding: 24px 0;
 }
 
 .header-logo {
@@ -24,8 +57,18 @@ a {
     text-transform: uppercase;
 }
 
+.header-navigation {
+    display: flex;
+    gap:76px
+}
+
 .header-logo span {
     color: #2E2F42;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
 }
 
 .nav-list-item-link {
@@ -45,6 +88,11 @@ a {
     font-style: normal;
 }
 
+.contacts-list {
+    display: flex;
+    gap:40px;
+}
+
 .contacts-list-item-link {
     color: #434455;
     font-size: 16px;
@@ -60,6 +108,10 @@ a {
 
 .solutions {
     background-color: #2E2F42;
+}
+
+.solutions .container {
+    padding-top: 188px;
 }
 
 .solutions-title {
@@ -78,6 +130,7 @@ a {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    margin-top: 48px;
     cursor: pointer;
 }
 
