@@ -33,18 +33,21 @@ img {
     display: block;
 }
 
-header .container {
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.header .container {
     display: flex;
-    gap: 332px;
+    justify-content: space-between;
 }
 
 .container {
-    max-width: 1128px;
+    max-width: 1158px;
     padding-left: 0;
     padding-right: 0;
-    margin-left: 156px;
-    margin-right:  156px;
-    padding: 24px 0;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 .header-logo {
@@ -55,11 +58,12 @@ header .container {
     letter-spacing: 0.03em;
     color: #4D5AE5;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .header-navigation {
     display: flex;
-    gap:76px
+    align-items: center;
 }
 
 .header-logo span {
@@ -69,6 +73,10 @@ header .container {
 .nav-list {
     display: flex;
     gap: 40px;
+}
+
+.nav-list-item {
+    padding: 24px 0;
 }
 
 .nav-list-item-link {
@@ -93,6 +101,10 @@ header .container {
     gap:40px;
 }
 
+.contacts-list-item {
+    padding: 24px 0;
+} 
+
 .contacts-list-item-link {
     color: #434455;
     font-size: 16px;
@@ -108,19 +120,22 @@ header .container {
 
 .solutions {
     background-color: #2E2F42;
+    padding: 188px 0;
 }
 
 .solutions .container {
-    padding-top: 188px;
+    
 }
 
 .solutions-title {
+    max-width: 496px;
     text-align: center;
     color: #FFFFFF;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    margin: 0 auto 48px;
 }
 
 .solutions-order-btn {
@@ -130,7 +145,10 @@ header .container {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    margin-top: 48px;
+    display: block;
+    margin: 0 auto;
+    padding: 16px 32px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -139,12 +157,26 @@ header .container {
     background-color: #404bbf;
 }
 
+.advantages {
+    padding: 120px 0;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;
+}
+
+.advantages-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
 .advantages-list-item-title {
     color: #2E2F42;
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .advantages-list-item-text {
@@ -156,6 +188,7 @@ header .container {
 
 .team {
     background-color: #F4F4FD;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -166,10 +199,22 @@ header .container {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.team-card-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-card {
+    width: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.card-info-wrapper {
+    padding: 32px 0
 }
 
 .team-card-title {
@@ -178,6 +223,8 @@ header .container {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-card-text {
@@ -185,6 +232,11 @@ header .container {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    text-align: center;
+}
+
+.portfolio {
+    padding: 120px 0;
 }
 
 .portfolio-title {
@@ -195,6 +247,24 @@ header .container {
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
+.portfolio-list-item {
+    width: calc((100% - 48px) / 3);
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.portfolio-info-wrapper {
+    padding: 32px 16px;
 }
 
 .portfolio-list-item-title {
@@ -203,6 +273,7 @@ header .container {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .portfolio-list-item-text {
@@ -220,10 +291,13 @@ header .container {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
-footer {
+.page-footer {
     background-color: #2E2F42;
+    padding: 100px 0;
 }
 
 .footer-logo-secondary-color {
