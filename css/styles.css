@@ -163,10 +163,14 @@ img {
 
 .visually-hidden {
     position: absolute;
-    clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
 }
 
 .advantages-list {
@@ -218,7 +222,7 @@ img {
 .team-card {
     width: calc((100% - 72px) / 4);
     background-color: #FFFFFF;
-    border-radius: 0 0 4px;
+    border-radius: 0 0 4px 4px;
 }
 
 .card-info-wrapper {
@@ -274,6 +278,7 @@ img {
 .portfolio-info-wrapper {
     padding: 32px 16px;
     border: 1px solid #E7E9FC;
+    border-top: none;
 }
 
 .portfolio-list-item-title {
